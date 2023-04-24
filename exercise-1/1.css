@@ -1,0 +1,20 @@
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
