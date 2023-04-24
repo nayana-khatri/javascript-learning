@@ -1,0 +1,24 @@
+#input1 {
+    margin-left: 50px;
+}
+
+#input2 {
+    margin-left: 80px;
+}
+
+.plus {
+    padding: 50px;
+    margin-left: 155px;
+}
+
+#sum {
+    margin: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+#ans {
+    font-size: 30px;
+}
+
