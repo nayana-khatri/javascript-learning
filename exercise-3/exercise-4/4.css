@@ -1,0 +1,19 @@
+#plus {
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    background-color: chocolate;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addItems {
+    height: 30px;
+    width: 80px;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
