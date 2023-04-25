@@ -1,0 +1,38 @@
+.tabs {
+    display: flex;
+}
+
+.header ul{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.tab {
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border: 2px solid green;
+    border-bottom: none;
+    background-color: aquamarine;
+}
+
+.tab:last-child {
+    border-bottom: 2px solid green;
+}
+
+.body .tabContent{
+    justify-content: center;
+}
+
+.active {
+    background-color: white;
+}

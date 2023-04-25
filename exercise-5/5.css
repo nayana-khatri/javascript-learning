@@ -1,0 +1,12 @@
+#input {
+    height: 500px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#type {
+    height: 100px;
+    width: 500px;
+}
