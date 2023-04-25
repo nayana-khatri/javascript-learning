@@ -1,0 +1,143 @@
+/* #productWrapper {
+    
+} */
+
+.imageWrapper {
+    height: auto;
+    width: auto;
+    display: flex;
+    padding: 10px;
+}
+
+.imageWrapper img {
+    height: 350px;
+    width: auto;
+    flex-grow: 1;
+    background-color: white;
+    overflow: hidden;
+}
+
+.detailsWrapper {
+    background-color: #eceae7;
+    border: 1px solid #eceae7;
+    border-radius: 5px;
+    padding: 10px;
+    /* margin-top: 10px */
+}
+
+.title {
+    font-size: 30px;
+    color: #3f3737;
+    padding: 10px;
+}
+
+.price {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #9a5d5d;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.review {
+    font-size: 25px;
+    color: #aea4a4;
+    padding: 10px;
+    padding-top: 0;
+}
+.category {
+    /* font-size: x-large; */
+    font-size: 20px;
+    color: #151414;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.descriptionWrapper {
+    font-size: 16px;
+    color: #373333;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    gap: 5px;
+}
+
+#addToCart {
+    padding: 5px;
+    letter-spacing: 1px;
+    background-color: #b7b7b0;
+    border: 1px solid #b7b7b0;
+    border-radius: 3px;
+    font-weight: 600;
+    color: #e8fbfb;
+    flex-grow: 1;
+}
+
+#buyNow {
+    padding: 5px;
+    letter-spacing: 1px;
+    background-color: #b7b7b0;
+    border: 1px solid #b7b7b0;
+    border-radius: 3px;
+    font-weight: 600;
+    color: #e8fbfb;
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 768px) {
+
+    .buttonWrapper {
+        height: 40px;
+        width: 50%;
+        position: relative;
+    }    
+}
+
+@media screen and (min-width: 1024px) {
+
+    #productWrapper {
+        display: flex;
+        /* flex-wrap: wrap; */
+    }
+
+    .imageWrapper {
+        max-width: 300px;
+        /* flex-grow: 1; */
+        /* padding: 20px; */
+    }
+
+    .imageWrapper img {
+        /* height: auto; */
+        width: 100%;
+        /* flex-grow: 1; */
+        /* padding: 20px */
+    }
+
+    .detailsWrapper {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    /* .descriptionWrapper {
+        padding: 5px;
+        font-size: 14px;
+    } */
+
+    .buttonWrapper {
+        height: 40px;
+        width: 40%;
+        position: relative;
+    }
+}
