@@ -1,0 +1,35 @@
+.heading {
+    padding: 10px;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.heading .icon {
+    position: absolute;
+    right: 20px;
+    width: 18px;
+    height: 18px;
+    background: rgb(48, 94, 245);
+    border-radius: 50%;
+    color:white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.collapsible {
+    border: 1px solid #e5e5e5;
+    border-top: none;
+    background-color: #f2f2f2;
+}
+
+.collapsible:first-child {
+    border-top: 1px solid #e5e5e5;
+}
+
+.collapsible .contentPanel{
+    padding: 30px 20px;
+    background-color: #fff;
+}
