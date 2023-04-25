@@ -1,0 +1,32 @@
+.contentPanel {
+    display: none;
+}
+
+
+.header ul{
+    margin: 0;
+    padding-inline-start: 0;
+}
+
+.header .tab {
+    display: inline-block;
+    border: 2px solid red;
+    padding: 20px;
+    margin-left:-4px;
+    border-left: none;
+    cursor: pointer;
+    background-color: #e1e3fa;
+    text-decoration: underline;
+    border-bottom: none;
+
+}
+
+.tab:first-child {
+    border-left: 2px solid red;
+    margin-left: 0;
+}
+
+.body {
+    border: 2px solid red;
+    height: 200px;
+}
