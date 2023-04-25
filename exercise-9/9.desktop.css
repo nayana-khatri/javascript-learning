@@ -1,0 +1,31 @@
+
+@media screen and (min-width: 1024px) {
+
+    .detailWrapper {
+        height: 200px;
+        width: 60%;
+        display: flex;
+        height: auto;
+    }
+
+    .detailWrapper .description {
+        width: calc(89% - 1px - 1px);
+        font-size: 16px;
+        height: 100%;
+    }
+
+    .sm-only {
+        display: none !important;
+    }
+
+    .lg-only {
+        display: flex !important;
+    }
+
+    .detailWrapper .viewmore {
+        width: 50px;
+        align-items: center;
+        font-size: 16px;
+    }
+  
+}

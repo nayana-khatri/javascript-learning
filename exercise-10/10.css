@@ -1,0 +1,41 @@
+.tileWrapper {
+    /* height: auto;
+    width: auto; */
+    background-color: white;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+}
+
+.tile {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(112, 119, 125);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#addTile {
+    font-size: xxx-large;
+    width: 50px;
+    height: 50px;
+    background-color: #a99e8d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .tile {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .tile {
+        width: 32.5%;
+    }
+}
+

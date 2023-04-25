@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Tabswrapper In One File Work Independly</title>
+    <link rel="stylesheet" href="11.css">
+</head>
+
+<body>
+    <div class="tabs1Wrapper">
+        <ul class="tabs">
+            <li class="tab" data-content="content1" data-active="true">Tab1</li>
+            <li class="tab" data-content="content2">Tab2</li>
+            <li class="tab" data-content="content3">Tab3</li>
+            <li class="tab" data-content="content4">Tab4</li>
+            <li class="tab" data-content="content5">Tab5</li>
+        </ul>
+        <div class="content" data-tab="content1">Content1</div>
+        <div class="content" data-tab="content2">Content2</div>
+        <div class="content" data-tab="content3">Content3</div>
+        <div class="content" data-tab="content4">Content4</div>
+        <div class="content" data-tab="content5">Content5</div>
+    </div>
+    <div class="tabs2Wrapper">
+        <ul class="tabs">
+            <li class="tab" data-content="content1">Tab1</li>
+            <li class="tab" data-content="content2">Tab2</li>
+            <li class="tab" data-content="content3" data-active="true">Tab3</li>
+            <li class="tab" data-content="content4">Tab4</li>
+            <li class="tab" data-content="content5">Tab5</li>
+        </ul>
+        <div class="content" data-tab="content1">Content1</div>
+        <div class="content" data-tab="content2">Content2</div>
+        <div class="content" data-tab="content3">Content3</div>
+        <div class="content" data-tab="content4">Content4</div>
+        <div class="content" data-tab="content5">Content5</div>
+    </div>
+</body>
+<script src="11.js"></script>
+</html>
