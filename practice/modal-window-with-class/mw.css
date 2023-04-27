@@ -5,7 +5,6 @@ h1 {
 
 .backDrop {
     display: none;
-    /* display: block; */
     position: fixed;
     top: 0;
     left: 0;
@@ -34,10 +33,6 @@ h1 {
 .show {
     display: block;
 }
-
-/* .modalWindow.hide {
-    display: block;
-} */
 
 .openModal {
     height: 50px;
