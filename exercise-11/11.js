@@ -10,8 +10,8 @@ function clickOnTabs(event) {
 
   var dataContent = event.target.getAttribute("data-content");
   var dataTab = event.target.parentElement.parentElement.querySelector(`[data-tab="${dataContent}"]`);
-  var activeLi = document.querySelector(".tab.active");
-  if(activeLi){
+  var activeLi = event.target.parentElement.parentElement.querySelector(".tab.active");
+  if (activeLi) {
     activeLi.classList.remove("active")
   }
   event.target.classList.add("active")
