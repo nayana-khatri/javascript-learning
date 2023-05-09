@@ -1,0 +1,40 @@
+@media screen and (min-width: 1024px) {
+
+    .hamburger-menu {
+        width: 300px;
+    }
+
+    .contact-me {
+        min-height: 280px;
+    }
+
+    .container-form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form {
+        width: 100%;
+        margin-top: 50px;
+        padding: 50px;
+        gap: 2%;
+    }
+
+    .btn {
+        width: 20%;
+    }
+
+    textarea {
+        height: 223px;
+    }
+
+    .form ul {
+        padding-left: 0;
+    }
+
+    .container1,
+    .container2 {
+        flex-basis: 49%;
+    }
+
+}
