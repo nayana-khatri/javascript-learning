@@ -37,4 +37,11 @@
         flex-basis: 49%;
     }
 
+    .image-overlay {
+        height: 450px;
+    }
+
+    .image-control img {
+        height: 450px;
+    }
 }

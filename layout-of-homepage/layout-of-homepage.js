@@ -101,6 +101,8 @@ formElement.addEventListener("submit", contentSubmit);
 var alertElement = "";
 
 function contentSubmit(event) {
+
+    event.preventDefault();
     // var inputElements = document.getElementsByTagName("input");
 
     // Array.from(inputElements).forEach(element => {
