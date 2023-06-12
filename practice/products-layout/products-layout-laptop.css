@@ -1,0 +1,44 @@
+@media screen and (min-width: 1024px) {
+
+    .products{
+        flex-wrap: nowrap;
+    }
+
+    .imageWrapper {
+        width: calc(23% - 2px);
+        display: inline-block;
+    }
+
+    .detailsWrapper {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .details {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 85%;
+    }
+
+    .actionWrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+
+    .actions {
+        margin-top: 43px;
+    }
+
+    .detailsBtn {
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    .addToCart {
+        padding: 5px;
+        font-size: 13px;
+    }
+}
