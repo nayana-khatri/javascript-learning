@@ -1,0 +1,38 @@
+/* .contentpanel {
+    display: none;
+} */
+.collapsible {
+    border: 1px solid red;
+    background-color: aquamarine;
+    border-top: none;
+}
+
+.collapsible:first-child {
+    border-top: 1px solid red;
+}
+
+.heading {
+    padding: 10px;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.heading .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    font-size: 20px;
+}
+
+.contentPanel {
+    padding: 30px 20px;
+    background-color: #fff;
+    /* display: none; */
+}

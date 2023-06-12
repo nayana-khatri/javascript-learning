@@ -1,0 +1,169 @@
+body {
+    background-color: #e9e9e9;
+    margin: 0;
+}
+
+.header {
+    height: 50px;
+    background-color: #5353e8;
+    position: fixed;
+    width: 100%;
+}
+
+.header .cartItem {
+    background-color: #ff0076;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 9px;
+}
+
+.header .cartItem .itemCount {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    margin-top: 70px;
+}
+
+.productWrapper {
+    width: calc(100% - 40px);
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 20px;
+    /* display: flex; */
+}
+
+.imageWrapper img {
+    max-height: 200px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    display: flex;
+}
+
+.title {
+    margin-top: 0;
+}
+
+.details {
+    width: calc(100% - 2px);
+    display: inline-block;
+}
+
+.price {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #3dc748;
+}
+
+.price::before {
+    content: "$";
+}
+
+.actions {
+    margin-top: 10px;
+    padding-top: 20px;
+}
+
+.actions .detailsBtn {
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #5f5fde;
+    border: 1px solid blue;
+    border-radius: 3px;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.actions .addToCart {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+@media screen and (min-width: 768px) {}
+
+
+@media screen and (min-width: 1024px) {
+
+    .product {
+        display: flex;
+    }
+
+    .imageWrapper {
+        display: flex;
+        width: 15%;
+    }
+
+    .detailsWrapper {
+        vertical-align: top;
+        display: flex;
+        width: 85%;
+        padding: 10px;
+    }
+
+    .actionWrapper {
+        width: calc(20% - 2px - 20px);
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .details {
+        width: calc(80% - 2px);
+    }
+
+    .actions {
+        margin-top: 43px;
+        padding-top: 20px;
+    }
+
+
+    .actions .detailsBtn {
+        margin-bottom: 20px;
+        width: 100%;
+        background-color: #5f5fde;
+        border: 1px solid blue;
+        border-radius: 3px;
+        padding: 5px;
+        color: white;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+
+    .actions .addToCart {
+        width: 100%;
+        background-color: white;
+        border: 1px solid #dedede;
+        border-radius: 3px;
+        padding: 5px;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+}

@@ -1,0 +1,106 @@
+.contact-me {
+    background-color: #d3dee8;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    min-height: 280px;
+}
+
+.contact-me .container-form {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.title {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: #3b3333;
+    letter-spacing: 1px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.contact-me .container-form .form {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+    padding: 50px;
+    gap: 2%;
+}
+
+.container1 {
+    flex-grow: 1;
+    flex-basis: 49%;
+}
+
+label {
+    color: #352e2e;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(203, 201, 201, 0.1411764706);
+    padding: 0;
+    border-radius: 3px;
+    border: 1px solid rgba(128, 128, 128, 0.5490196078);
+    padding: 0px 5px 0 5px;
+    box-sizing: border-box;
+}
+
+.container2 {
+    flex-grow: 1;
+    flex-basis: 49%;
+}
+
+.container1 div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container2 div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 223px;
+    background-color: rgba(203, 201, 201, 0.1411764706);
+    padding: 0;
+    border-radius: 3px;
+    border: 1px solid rgba(128, 128, 128, 0.5490196078);
+    padding: 0px 5px 0 5px;
+    box-sizing: border-box;
+}
+
+.button-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    height: 40px;
+    background-color: rgba(0, 128, 0, 0.7215686275);
+    border-radius: 3px;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+    border-width: 0;
+    padding: 0;
+    width: 20%;
+}

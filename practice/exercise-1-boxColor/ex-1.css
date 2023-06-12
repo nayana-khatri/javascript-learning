@@ -1,0 +1,32 @@
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.button{
+    padding: 5px 20px;
+    border-width: 1px;
+    border-radius: 2px;
+    font-size: 16px;
+    color: #524545;
+    letter-spacing: 1px;
+}
+
+.box{
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#box {
+    background-color: rgb(164, 158, 158);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    font-size: 25px;
+    color: aliceblue;
+}
+
