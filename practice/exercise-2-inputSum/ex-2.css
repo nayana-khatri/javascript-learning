@@ -1,0 +1,25 @@
+#input1 {
+    margin-left: 50px;
+    padding: 10px 0px 0px 1px;
+    font-size: 16px;
+}
+
+#input2 {
+    margin-left: 80px;
+    padding: 10px 0px 0px 1px;
+    font-size: 16px;
+}
+
+#sum {
+    margin-top: 50px;
+    margin-left: 220px;
+    padding: 7px 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#result {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 25px;
+}

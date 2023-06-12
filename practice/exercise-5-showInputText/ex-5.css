@@ -1,0 +1,13 @@
+#type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#textArea{
+    height: 100px;
+    width: 300px;
+    background-color: #a9a9a936;
+    border-color: #a9a9a936;
+}

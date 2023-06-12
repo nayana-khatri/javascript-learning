@@ -1,0 +1,41 @@
+.tabs{
+    display: flex;
+}
+
+ul{
+    padding: 0;
+    margin-block-start: 0;
+}
+
+.tab {
+    border: 2px solid chocolate;
+    font-size: 18px;
+    background-color: coral;
+    height: 40px;
+    width: 80px;
+    color: #423d3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: none;
+    text-decoration: underline;
+}
+
+.tab:last-child {
+    border: 2px solid chocolate;
+}
+
+.active {
+    background-color: white;
+}
+
+.body {
+    height: 208px;
+    border: 2px solid chocolate;
+    border-left: none;
+    width: 100%;
+}
+
+.content {
+    padding: 20px;
+}

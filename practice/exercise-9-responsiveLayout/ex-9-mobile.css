@@ -1,0 +1,38 @@
+.product {
+    border: 1px solid black;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.imageWrapper {
+    height: 50%;
+    width: 100%;
+}
+
+img {
+    height: 200px;
+    display: block;
+    width: 100%;
+}
+
+.detailWrapper{
+    background-color: cornflowerblue;
+}
+
+.description {
+    padding: 20px;
+    color: azure;
+    font-size: 16px;
+    margin: 0;
+}
+
+.sm-only {
+    display: flex;
+    justify-content: end;
+    color: azure;
+}
+
+.lg-only {
+    display: none;
+}

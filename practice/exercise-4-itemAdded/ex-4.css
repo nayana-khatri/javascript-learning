@@ -1,0 +1,21 @@
+#plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: aqua;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.addItem {
+    height: 25px;
+    width: 50px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    margin-top: 5px;
+}

@@ -1,0 +1,31 @@
+.inputs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+input::placeholder{
+    background-color: #a9a9a9a3;
+}
+
+#apply {
+    padding: 10px 30px 10px 30px;
+    margin: 20px;
+    font-size: 16px;
+    background-color: #5f9ea085;
+    border-color: red;
+    border-radius: 3px;
+}
+
+#boxAction {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

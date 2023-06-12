@@ -1,0 +1,39 @@
+.tileWrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tile {
+    height: 200px;
+    width: 100%;
+    background-color: #7fffd47d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addTile {
+    color: blueviolet;
+    height: 70px;
+    width: 70px;
+    background-color: #8a2be280;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 768px){
+    .tile {
+    width: 48%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .tile {
+    width: 32%;
+    }
+}

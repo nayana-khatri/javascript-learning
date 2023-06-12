@@ -1,0 +1,20 @@
+@media screen and (min-width: 768px) {
+    .product {
+        display: flex;
+        height: 200px;
+        width: 100%;
+    }
+
+    .imageWrapper {
+        height: 200px;
+    }
+
+    .description {
+    font-size: 16px;
+    }
+
+    .sm-only {
+        align-items: end;
+        height: 70px;
+    }
+}

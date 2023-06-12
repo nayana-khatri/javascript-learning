@@ -1,0 +1,17 @@
+#boxPosition{
+    display: flex;
+    margin-top: 20px;
+    height: 100vh;
+    width: 100%;
+}
+
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    color: coral;
+    font-size: 22px;
+}
