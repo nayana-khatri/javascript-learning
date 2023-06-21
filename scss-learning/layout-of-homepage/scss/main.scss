@@ -1,0 +1,499 @@
+@import 'variables/variable';
+@import 'variables/mediaquary';
+
+@mixin flex-align($horizontalAlign, $verticalAlign) {
+    display: flex;
+
+    @if $horizontalAlign {
+        justify-content: $horizontalAlign;
+    }
+
+    @if $verticalAlign {
+        align-items: $verticalAlign;
+    }
+
+}
+
+body {
+    margin: 0;
+}
+
+
+.backdrop {
+    height: 100vh;
+    width: 100%;
+    background-color: $color-2-backdrop;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.open {
+    display: block !important;
+}
+
+
+.header {
+    z-index: 1;
+    height: 50px;
+    width: 100%;
+    background-color: $color-4-header;
+    position: fixed;
+    @include flex-align(false, center);
+    padding: 0 15px 0 15px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(255, 255, 255, 0.15);
+
+    .hamburger-icon {
+        height: 40px;
+        width: 30px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .button {
+        height: 30px;
+        border-radius: 3px;
+        color: $color-3;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+}
+
+
+.hamburger-menu {
+    display: none;
+    height: 100%;
+    background-color: #dde6ef;
+    padding: 10px;
+    z-index: 3;
+    position: fixed;
+    left: 0px;
+    top: 0;
+    box-sizing: border-box;
+    width: 100%;
+
+    @media #{$tablet-media} {
+        width: 50%;
+    }
+
+    @media #{$laptop-media} {
+        width: 300px;
+    }
+
+    .close {
+        @include flex-align(center, center);
+        height: 20px;
+        width: 20px;
+        background-color: azure;
+        color: #6d6060;
+        border: 1px solid #362929;
+        text-decoration: none;
+        border-radius: 3px;
+    }
+
+    .menu {
+        margin-block-start: 0;
+        margin-block-end: 0px;
+        padding-inline-start: 0px;
+        list-style: none;
+        flex-direction: column;
+        @include flex-align(false, center);
+
+
+        li {
+            padding-bottom: 20px;
+            @include flex-align(center, false);
+            width: 100%;
+        }
+    }
+
+    .menu-list {
+        text-decoration: none;
+        @include flex-align(center, false);
+        flex-basis: 100%;
+    }
+
+    .list {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0px;
+        list-style: none;
+        position: absolute;
+        left: 0px;
+        bottom: 10px;
+        width: 100%;
+        @include flex-align(space-around, false);
+    }
+
+    .link {
+        height: 25px;
+        width: 25px;
+        border-radius: 2px;
+        @include flex-align(center, center);
+        margin: 100px auto 0px auto;
+        text-decoration: none;
+
+        .in {
+            background-color: $color-6-linkedin;
+            color: $color-3;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border: 1px solid $color-6-linkedin;
+        }
+
+        .g {
+            background-color: $color-7-google;
+            color: $color-3;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border: 1px solid $color-7-google;
+        }
+
+        .f {
+            background-color: $color-8-facebook;
+            color: $color-3;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border: 1px solid $color-8-facebook;
+        }
+
+        .t {
+            background-color: $color-9-twitter;
+            color: $color-3;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border: 1px solid $color-9-twitter;
+        }
+    }
+}
+
+.image-control {
+    position: relative;
+    padding-top: 20px;
+
+    @media #{$tablet-media} {
+        padding-top: 0;
+    }
+
+    .image-overlay {
+        height: 88%;
+        width: 100%;
+        position: absolute;
+        background-color: #101010a6;
+        padding: 0 20px 0 20px;
+        box-sizing: border-box;
+
+        @media #{$tablet-media} {
+            height: 99%;
+        }
+
+        .main-line {
+            margin-top: 40px;
+            color: $color-3;
+            margin-block-end: 0;
+            font-size: 28px;
+
+            @media #{$tablet-media} {
+                margin-top: 120px;
+                font-size: 50px
+            }
+        }
+
+        .contentOnImage {
+            color: $color-3;
+            font-size: 16px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-top: 20px;
+
+            @media #{$tablet-media} {
+                font-size: 30px;
+            }
+        }
+    }
+
+    img {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+.container {
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.title {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: $color-10-heading-h1;
+    letter-spacing: 1px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.description {
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about-me {
+    // margin-top: 30px;
+    min-height: 180px;
+    @include flex-align(center, false);
+}
+
+
+.my-projects {
+    min-height: 250px;
+    margin-top: 2px;
+    background-color: #faebd7a3;
+    @include flex-align(center, false);
+
+    .tiles {
+        @include flex-align(space-around, false);
+    }
+
+    .tile {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        @include flex-align(center, center);
+        text-decoration: none;
+
+        &.a {
+            background-color: aquamarine;
+        }
+
+        &.b {
+            background-color: #8a2be28f;
+        }
+
+        &.c {
+            background-color: coral;
+        }
+
+        &.d {
+            background-color: #008b8b99;
+        }
+    }
+}
+
+
+.project-footer {
+    min-height: 180px;
+    @include flex-align(center, false);
+
+    .tile.e {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        text-decoration: none;
+        background-color: #59258a9c;
+        @include flex-align(center, center);
+        color: floralwhite;
+        margin: 0px auto 0px auto;
+    }
+}
+
+
+.contact-me {
+    background-color: #d3dee8;
+    margin-top: 2px;
+    @include flex-align(center, false);
+
+    @media #{$laptop-media} {
+        min-height: 280px;
+    }
+
+    .container-form {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        @media #{$tablet-media} {
+            width: 80%;
+        }
+
+        @media #{$laptop-media} {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .form {
+            background-color: $color-3;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            padding: 30px 15px 30px 15px;
+
+            @media #{$laptop-media} {
+                width: 100%;
+                margin-top: 50px;
+                padding: 50px;
+                gap: 2%;
+            }
+        }
+
+        label {
+            color: $color-13-input-label;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        input {
+            width: 100%;
+            height: 40px;
+            background-color: $color-11-input;
+            padding: 0;
+            border-radius: 3px;
+            border: 1px solid $color-12-input-border;
+            padding: 0px 5px 0 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            padding: 0;
+            width: 100%;
+            background-color: $color-11-input;
+            border-radius: 3px;
+            height: 150px;
+            border: 1px solid $color-12-input-border;
+            padding: 5px 5px 0 5px;
+            box-sizing: border-box;
+
+            @media #{$laptop-media} {
+                height: 223px;
+            }
+        }
+
+        .button-form {
+            width: 100%;
+            @include flex-align(center, false);
+            gap: 20px;
+        }
+
+        .btn {
+            height: 40px;
+            background-color: $color-1-button-form ;
+            border-radius: 3px;
+            color: $color-3;
+            font-size: 18px;
+            letter-spacing: 1px;
+            text-align: center;
+            border-width: 0;
+            padding: 0;
+            width: 40%;
+
+            @media #{$laptop-media} {
+                width: 20%;
+            }
+        }
+
+        .container1,
+        .container2 {
+            flex-grow: 1;
+            flex-basis: 100%;
+
+            @media #{$laptop-media} {
+                flex-basis: 49%;
+            }
+        }
+
+        .container1 div,
+        .container2 div {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+
+
+.modalWindow {
+    display: none;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+
+    .modalWindow-content {
+        width: 80%;
+        position: fixed;
+        background-color: whitesmoke;
+        border-radius: 5px;
+        box-shadow: 0 0 14px 0 rgba(15, 17, 17, .5);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media #{$tablet-media} {
+            width: 50%;
+        }
+
+    }
+
+    .modal-header {
+        @include flex-align(space-between, false);
+        background-color: #e2e5e5;
+        padding: 20px;
+    }
+
+    .modal-title {
+        font-size: 25px;
+        align-self: center;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+
+    .cross {
+        font-size: 18px;
+        align-self: center;
+        cursor: pointer;
+        text-decoration: none;
+        background-color: $color-3;
+        height: 20px;
+        width: 20px;
+        color: #847575;
+        @include flex-align(center, center);
+        border: 1px solid #2e2929;
+        border-radius: 3px;
+    }
+
+    .modal-body {
+        padding: 30px;
+    }
+
+    .footer {
+        background-color: #e2e5e5;
+        padding: 20px;
+        margin-top: 40px;
+        @include flex-align(end, false);
+
+        .btnb {
+            border-radius: 3px;
+            width: 90px;
+            background-color: #8080808c;
+            border: 1px solid #808080a1;
+            color: $color-3;
+            letter-spacing: 2px;
+            padding: 10px 0 10px 0;
+            cursor: pointer;
+            font-size: 20px;
+            height: 30px;
+        }
+    }
+}
+
+.show {
+    display: block;
+}
